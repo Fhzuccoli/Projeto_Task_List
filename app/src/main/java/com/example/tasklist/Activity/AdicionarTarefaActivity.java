@@ -1,8 +1,10 @@
-package com.example.tasklist;
+package com.example.tasklist.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.tasklist.R;
 
 public class AdicionarTarefaActivity extends AppCompatActivity {
 

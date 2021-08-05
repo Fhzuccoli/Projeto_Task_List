@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.tasklist.Adapter.TarefaAdapter;
+import com.example.tasklist.Model.Tarefa;
 import com.example.tasklist.R;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private RecyclerView recyclerView;
     private TarefaAdapter tarefaAdapter;
-    private List<Tarefas> listaTarefas = new ArrayList<>();
+    private List<Tarefa> listaTarefas = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new DividerItemDecoration(getApplicationContext(), LinearLayout.VERTICAL));
-        recyclerView.setAdapter(adapter;
+        recyclerView.setAdapter(tarefaAdapter);
     }
 
     public void criarTarefa(){
